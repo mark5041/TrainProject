@@ -5,9 +5,9 @@ import java.util.List;
 import com.betacom.train.model.Tratta;
 
 public interface TrattaService {
-
-	 void saveTratta(Tratta tratta);
-	 List<Tratta> getAll();
-	 void deleteTratta(Long id);
-
+	void saveTratta(Tratta tratta);
+	List<Tratta> getTratte();
+	void trattaDisponibile(Long id);
+	void trattaNonDisponibile(Long id);
+	
 }
