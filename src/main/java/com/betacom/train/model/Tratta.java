@@ -20,7 +20,6 @@ import lombok.Data;
 public class Tratta {
 	
 	@Id
-	@Column(nullable = false, unique = true)
 	private Long idTratta;
 	
 	@Column(nullable = false)

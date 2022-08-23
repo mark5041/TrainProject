@@ -20,7 +20,6 @@ import lombok.Data;
 public class Treno {
 	
 	@Id
-	@Column(nullable = false, unique = true)
 	private String idTreno;
 	
 	@Column(nullable = false)

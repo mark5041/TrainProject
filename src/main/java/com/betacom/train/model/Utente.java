@@ -30,7 +30,6 @@ public class Utente implements Serializable {
 	private static final long serialVersionUID = -5550977500721620151L;
 	
 	@Id
-	@Column(nullable = false, unique = true)
 	private String email;
 	
 	@Column(nullable = false)
@@ -61,7 +60,7 @@ public class Utente implements Serializable {
 	private Set<Biglietto> biglietto = new HashSet<Biglietto>();
 	
 	@ManyToOne
-	@JoinColumn(name = "idCarta", nullable = false)
+	@JoinColumn(name = "id_carta", nullable = false)
 	private CartaFedelta cartaFedelta;
 	
 	

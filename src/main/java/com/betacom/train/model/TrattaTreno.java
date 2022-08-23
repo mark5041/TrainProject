@@ -2,7 +2,9 @@ package com.betacom.train.model;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -42,6 +44,10 @@ public class TrattaTreno {
 	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern = "yyyy/MM/dd HH:mm")
 	private Date orario;
+	
+	@OneToMany(mappedBy = "trattatreno", cascade = CascadeType.ALL)
+	@JsonIgnore
+	private Set<Biglietto> biglietto = new HashSet<Biglietto>();
 	
 	@OneToMany(mappedBy = "trattatreno", cascade = CascadeType.ALL)
 	@JsonIgnore

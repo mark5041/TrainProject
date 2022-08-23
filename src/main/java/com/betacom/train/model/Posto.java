@@ -15,11 +15,10 @@ import lombok.Data;
 public class Posto {
 	
 	@Id
-	@Column(nullable = false, unique = true)
 	private Long idPosto; 
 	
 	@ManyToOne
-	@JoinColumn(name = "id_trattatreno", nullable = false)
+	@JoinColumn(name = "id_tratta_treno", nullable = false)
 	private TrattaTreno trattatreno;
 	
 	@Column(nullable = false)
