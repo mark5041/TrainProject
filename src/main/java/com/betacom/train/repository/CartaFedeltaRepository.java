@@ -1,4 +1,8 @@
 package com.betacom.train.repository;
 
-public interface CartaFedeltaRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.betacom.train.model.CartaFedelta;
+
+public interface CartaFedeltaRepository extends JpaRepository<CartaFedelta, String> {
 }
