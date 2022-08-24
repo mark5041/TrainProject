@@ -25,8 +25,8 @@ public interface TrenoRepository extends JpaRepository<Treno, String> {
 	@Query(value = "update treno set stato = 0 where id_treno = ?1", nativeQuery = true)
 	void trenoNonDisponibile(String id);
 	
-	@Query(value = "select * from treno where id_treno = 1?", nativeQuery = true)
-	Treno findByCodeTreno();
+	@Query(value = "select * from treno where id_treno = ?1", nativeQuery = true)
+	Treno findByCodeTreno(String id);
 	
 	
 	

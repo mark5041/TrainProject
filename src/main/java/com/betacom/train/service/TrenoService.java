@@ -8,7 +8,7 @@ public interface TrenoService {
 	void saveTreno(Treno treno);
 	List<Treno> getTreni();
 	List<Treno> getTreniDisponibili();
-	Treno findByCodeTreno();
+	Treno findByCodeTreno(String id);
 	void trenoDisponibile(String id);
 	void trenoNonDisponibile(String id);
 }

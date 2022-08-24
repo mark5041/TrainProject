@@ -8,4 +8,5 @@ public interface TrattaTrenoService {
 	void saveTrattaTreno(TrattaTreno trattaTreno);
 	List<TrattaTreno> getTratteTreni();
 	List<TrattaTreno> findTrattaTrenoByName(String nome);
+	List<String[]> getInfoTratte();
 }
