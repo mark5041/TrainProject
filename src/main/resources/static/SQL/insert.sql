@@ -36,6 +36,7 @@ insert into posto(id_posto,id_tratta_treno,numero_posto,stato_posto,classe) valu
 
 insert into posto(id_posto,id_tratta_treno,numero_posto,stato_posto,classe) values(1,1,'1A', 1, 'platinum');
 insert into posto(id_posto,id_tratta_treno,numero_posto,stato_posto,classe) values(2,1,'4A', 1, 'platinum');
+
 insert into posto(id_posto,id_tratta_treno,numero_posto,stato_posto,classe) values(3,1,'5A', 0, 'platinum');
 insert into posto(id_posto,id_tratta_treno,numero_posto,stato_posto,classe) values(4,1,'1B', 1, 'gold');
 insert into posto(id_posto,id_tratta_treno,numero_posto,stato_posto,classe) values(5,1,'3B', 0, 'gold');
