@@ -35,6 +35,10 @@ public class Biglietto {
 	@Column(nullable = false)
 	private boolean minorenne;
 	
+
+	@Column(nullable = false)
+	private String numeroPosto;
+	
 	@ManyToOne
 	@JoinColumn(name = "email", nullable = false)
 	private Utente utente;

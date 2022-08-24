@@ -43,7 +43,7 @@ public class Utente implements Serializable {
 	
 	@Column(nullable = false)
 	@Temporal(TemporalType.DATE)
-	@DateTimeFormat(pattern = "yyyy/MM/dd")
+	@DateTimeFormat(pattern = "DD/MM/YYYY")
 	private Date data;
 	
 	@Column(nullable = false)
