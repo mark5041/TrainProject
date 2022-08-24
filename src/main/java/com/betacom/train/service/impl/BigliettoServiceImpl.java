@@ -8,16 +8,15 @@ import com.betacom.train.model.Biglietto;
 import com.betacom.train.repository.BigliettoRepository;
 import com.betacom.train.service.BigliettoService;
 
+public class BigliettoServiceImpl implements BigliettoService {
 
-public class BigliettoServiceImpl implements BigliettoService{
-	
 	@Autowired
-	BigliettoRepository br; 
-	
+	BigliettoRepository br;
+
 	@Override
 	public void saveBiglietto(Biglietto biglietto) {
 		br.save(biglietto);
-		
+
 	}
 
 	@Override
@@ -27,7 +26,7 @@ public class BigliettoServiceImpl implements BigliettoService{
 
 	@Override
 	public List<String[]> getBiglietti(String email) {
-		return null;
+		return br.;
 	}
 
 	@Override
@@ -43,7 +42,7 @@ public class BigliettoServiceImpl implements BigliettoService{
 	@Override
 	public void deletePrenotazione(Biglietto biglietto) {
 		br.delete(biglietto);
-		
+
 	}
 
 }
