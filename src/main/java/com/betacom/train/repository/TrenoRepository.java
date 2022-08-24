@@ -4,12 +4,11 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
-import com.betacom.train.model.Tratta;
-import com.betacom.train.model.Treno;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+
+import com.betacom.train.model.Treno;
 
 public interface TrenoRepository extends JpaRepository<Treno, String> {
 	@Query(value = "select * from treno where stato = 1", nativeQuery = true)
