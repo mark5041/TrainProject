@@ -14,4 +14,5 @@ public interface TrattaTrenoRepository extends JpaRepository<TrattaTreno, Long> 
 	
 	@Query(value = "select dinstinct treno.id_treno, tratta.nome, tratta_treno.orario from tratta_treno join tratta on tratta.id_tratta = tratta_treno.id_tratta join treno on treno.id_treno = tratta_treno.id_treno", nativeQuery = true)
 	public List<String[]> getInfoTratte();
+	
 }
