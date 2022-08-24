@@ -23,4 +23,6 @@ public interface PostoRepository extends JpaRepository<Posto, Long> {
 	@Transactional
 	@Query(value = "update posto set statoPosto = 0 where id_posto = ?1", nativeQuery = true)
 	void postoNonDisponibile(Long id);
+	
+	
 }
