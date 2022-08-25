@@ -9,11 +9,11 @@ public class GeneraBiglietto {
 	
 	Random rnd = new Random();
 	
-	public String generaIdPrenotazione() {
-		char[] idP = new char[len];
+	public String generaIdBiglietto() {
+		char[] idB = new char[len];
 		for(int i = 0; i < len; i++) {
-			idP[i] = lettereNumeri.charAt(rnd.nextInt(37));
+			idB[i] = lettereNumeri.charAt(rnd.nextInt(37));
 		}
-		return new String(idP);
+		return new String(idB);
 	}
 }

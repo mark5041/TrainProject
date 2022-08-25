@@ -1,6 +1,7 @@
 package com.betacom.train.service.impl;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.betacom.train.model.Utente;
 import com.betacom.train.repository.UtenteRepository;
@@ -28,7 +29,7 @@ public class UtenteServiceImpl implements UtenteService {
 	}
 
 	@Override
-	public Utente utenteByEmail(String email) {
+	public Optional<Utente> utenteByEmail(String email) {
 		return ur.findByEmail(email);
 	}
 
@@ -44,10 +45,5 @@ public class UtenteServiceImpl implements UtenteService {
 
 	@Override
 	public void confermaRegUtente(String email) {
-<<<<<<< HEAD
-
-=======
->>>>>>> branch 'master' of https://github.com/mark5041/TrainProject.git
 	}
-
 }

@@ -9,8 +9,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import com.betacom.train.model.Utente;
 import com.betacom.train.repository.UtenteRepository;
 
-
-
 @Configuration
 public class UtentiDetailsService implements UserDetailsService {
 	
@@ -31,7 +29,7 @@ public class UtentiDetailsService implements UserDetailsService {
 				
 				System.out.println("--------PWD USERDETAILS-------- " + utente.getPassword());
 				
-				return User.withUsername(utente.getUsername())
+				return User.withUsername(utente.getEmail())
 							.accountLocked(!utente.isEnabled())
 							.password(utente.getPassword())
 							.roles(utente.getRole())
@@ -42,5 +40,4 @@ public class UtentiDetailsService implements UserDetailsService {
 		}
 		throw new UsernameNotFoundException(email);
 	}
-
 }

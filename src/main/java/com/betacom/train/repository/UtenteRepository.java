@@ -23,6 +23,6 @@ public interface UtenteRepository extends JpaRepository<Utente, Long> {
 	@Query(value = "update utente set enable = 0 where email = ?1", nativeQuery = true)
 	public void disableUtente();
 	
-	@Query(value = "select * from utente where email = 1", nativeQuery = true)
+	@Query(value = "select * from utente where email = ?1", nativeQuery = true)
 	Optional<Utente> findByEmail(String email);
 }

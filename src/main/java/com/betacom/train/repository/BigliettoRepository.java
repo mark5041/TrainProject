@@ -23,4 +23,7 @@ public interface BigliettoRepository extends JpaRepository<Biglietto, String> {
 	@Transactional
 	@Query(value = "update biglietto set statoBiglietto = 0 where id_biglietto= ?1", nativeQuery = true)
 	void BigliettoNonDisponibile(String id);
+	
+	@Query(value = "select * from biglietto where email = ?1", nativeQuery = true)
+	List<String[]> findBigliettiByEmail(String email);
 }

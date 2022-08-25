@@ -16,7 +16,6 @@ public class BigliettoServiceImpl implements BigliettoService {
 	@Override
 	public void saveBiglietto(Biglietto biglietto) {
 		br.save(biglietto);
-
 	}
 
 	@Override
@@ -26,8 +25,7 @@ public class BigliettoServiceImpl implements BigliettoService {
 
 	@Override
 	public List<String[]> getBiglietti(String email) {
-		return null;
-		
+		return br.findBigliettiByEmail(email) ;
 	}
 
 	@Override
@@ -43,7 +41,5 @@ public class BigliettoServiceImpl implements BigliettoService {
 	@Override
 	public void deletePrenotazione(Biglietto biglietto) {
 		br.delete(biglietto);
-
 	}
-
 }
