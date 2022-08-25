@@ -26,7 +26,8 @@ public class BigliettoServiceImpl implements BigliettoService {
 
 	@Override
 	public List<String[]> getBiglietti(String email) {
-		return br.;
+		return null;
+		
 	}
 
 	@Override
