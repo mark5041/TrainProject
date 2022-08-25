@@ -14,6 +14,7 @@ import com.betacom.train.repository.UtenteRepository;
 @Configuration
 public class UtentiDetailsService implements UserDetailsService {
 	
+	
 	private UtenteRepository utenteRepo;
 
 	public UtentiDetailsService(UtenteRepository utenteRepository) {
