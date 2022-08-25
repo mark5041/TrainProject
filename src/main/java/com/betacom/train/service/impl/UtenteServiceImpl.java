@@ -44,7 +44,6 @@ public class UtenteServiceImpl implements UtenteService {
 
 	@Override
 	public void confermaRegUtente(String email) {
-		ur.
 	}
 
 }
