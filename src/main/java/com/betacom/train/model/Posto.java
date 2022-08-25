@@ -17,9 +17,6 @@ public class Posto {
 	@Id
 	private Long idPosto; 
 	
-	@ManyToOne
-	@JoinColumn(name = "id_tratta_treno", nullable = false)
-	private TrattaTreno trattatreno;
 	
 	@Column(nullable = false)
 	private String numeroPosto;
@@ -30,4 +27,7 @@ public class Posto {
 	@Column(nullable = false)
 	private String classe;
 	
+	@ManyToOne
+	@JoinColumn(name = "id_tratta_treno", nullable = false)
+	private TrattaTreno trattatreno;
 }

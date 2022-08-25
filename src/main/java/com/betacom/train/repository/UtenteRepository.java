@@ -1,5 +1,7 @@
 package com.betacom.train.repository;
 
+import java.util.Optional;
+
 import javax.transaction.Transactional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -22,5 +24,5 @@ public interface UtenteRepository extends JpaRepository<Utente, Long> {
 	public void disableUtente();
 	
 	@Query(value = "select * from utente where email = 1", nativeQuery = true)
-	public Utente findByEmail(String email);
+	Optional<Utente> findByEmail(String email);
 }

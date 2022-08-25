@@ -44,7 +44,10 @@ public class UtenteServiceImpl implements UtenteService {
 
 	@Override
 	public void confermaRegUtente(String email) {
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/mark5041/TrainProject.git
 	}
 
 }
