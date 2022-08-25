@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="container">
+ <div class="page-header">
+  <h3>Si &egrave; presentato un problema durante l'elaborazione</h3>
+ </div>
+ <p><strong>Log relativo all'eccezione</strong></p>
+ <table class="table">
+  <tr>
+   <td style="width:150px;">Date</td>
+   <td th:text="${timestamp}"></td>
+  </tr>
+  <tr>
+   <td>Path</td>
+   <td th:text="${path}"></td>
+  </tr>
+  <tr>
+   <td>Error</td>
+   <td th:text="${error}"></td>
+  </tr>
+  <tr>
+   <td>Status</td>
+   <td th:text="${status}"></td>
+  </tr>
+  <tr>
+   <td>Message</td>
+   <td th:text="${message}"></td>
+  </tr>
+  <tr>
+   <td>Exception</td>
+   <td th:text="${exception}"></td>
+  </tr>
+  <tr>
+   <td>StackTrace</td>
+   <td th:text="${trace}"></td>
+  </tr>
+ </table>
+ <button class="btn btn-primary" style="width:200px;"
+   type="button" onclick="history.back()">
+   Indietro 
+ </button>
+</div>
+
+</body>
+</html>

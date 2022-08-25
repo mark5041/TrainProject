@@ -7,9 +7,11 @@ import javax.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
 import com.betacom.train.model.Biglietto;
 
+@Repository
 public interface BigliettoRepository extends JpaRepository<Biglietto, String> {
 	@Query(value = "select * from biglietto where statoBiglietto = 1", nativeQuery = true)
 	List<Biglietto> getBiglietto();

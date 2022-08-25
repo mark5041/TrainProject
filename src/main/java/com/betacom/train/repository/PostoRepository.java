@@ -7,9 +7,11 @@ import javax.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
 import com.betacom.train.model.Posto;
 
+@Repository
 public interface PostoRepository extends JpaRepository<Posto, Long> {
 	@Query(value = "select * from posto where stato_posto = 1", nativeQuery = true)
 	List<Posto> getPostiDisponibili();
