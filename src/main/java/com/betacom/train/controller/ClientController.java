@@ -19,7 +19,8 @@ import com.betacom.train.service.UtenteService;
 @Controller
 @Scope("session")
 public class ClientController {
-	@Autowired(required=true)
+	
+	@Autowired
 	UtenteService utenteService;
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)

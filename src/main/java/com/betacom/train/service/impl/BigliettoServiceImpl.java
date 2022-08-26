@@ -3,11 +3,13 @@ package com.betacom.train.service.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.betacom.train.model.Biglietto;
 import com.betacom.train.repository.BigliettoRepository;
 import com.betacom.train.service.BigliettoService;
 
+@Service
 public class BigliettoServiceImpl implements BigliettoService {
 
 	@Autowired

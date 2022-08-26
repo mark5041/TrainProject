@@ -7,7 +7,9 @@ import com.betacom.train.repository.TrenoRepository;
 import com.betacom.train.service.TrenoService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class TrenoServiceImpl implements TrenoService{
 
 	@Autowired

@@ -8,7 +8,9 @@ import com.betacom.train.repository.TrattaRepository;
 import com.betacom.train.service.TrattaService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class TrattaServiceImpl implements TrattaService {
 
 	@Autowired
