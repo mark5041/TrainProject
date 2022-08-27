@@ -9,4 +9,6 @@ public interface TrattaTrenoService {
 	List<TrattaTreno> getTratteTreni();
 	List<TrattaTreno> findTrattaTrenoByName(String nome);
 	List<String[]> getInfoTratte();
+	List<String[]> getInfoTratteDisponibili();
+	List<String[]> getInfoTratteByNome(String partenza, String arrivo);
 }

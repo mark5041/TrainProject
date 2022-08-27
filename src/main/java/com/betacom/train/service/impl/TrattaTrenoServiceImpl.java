@@ -35,5 +35,15 @@ public class TrattaTrenoServiceImpl implements TrattaTrenoService {
 		return ttr.getInfoTratte();
 	}
 	
+	@Override
+	public List<String[]> getInfoTratteDisponibili() {
+		return ttr.getInfoTratteDisponibili();
+	}
+	
+	@Override
+	public List<String[]> getInfoTratteByNome(String partenza, String arrivo) {
+		return ttr.getInfoTratteByNome(partenza, arrivo);
+	}
+	
 	
 }
