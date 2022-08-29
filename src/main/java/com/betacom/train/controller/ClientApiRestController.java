@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.betacom.train.security.BCryptEncoder;
+
 @RestController
 @RequestMapping("/")
 @CrossOrigin(origins = "http://localhost:4200")
@@ -41,6 +43,12 @@ public class ClientApiRestController {
 		} else {
 			return ResponseEntity.ok(null);
 		}
+	}
+	
+	@GetMapping("/registra")
+	public void registraUtente(@RequestParam(name = "utente") Utente utente) {
+		utente.setPassword(BCryptEncoder.encode(utente.getPassword()));
+		user.saveCliente(utente);
 	}
 	
 
