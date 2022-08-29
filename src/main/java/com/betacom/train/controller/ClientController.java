@@ -9,13 +9,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import it.betacom.ordini.businesscomponent.Carrello;
-import it.betacom.ordini.model.Articolo;
 
 import com.betacom.train.email.EmailSenderService;
 import com.betacom.train.model.Utente;
-
-import java.util.List;
 
 import javax.servlet.http.HttpSession;
 
@@ -41,7 +37,7 @@ public class ClientController {
 		return mv;
 	}
 	
-	/******************LOGIN UTENTE***************/
+	/******************LOGIN UTENTE***************
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public ModelAndView login(HttpSession session) {
@@ -81,6 +77,7 @@ public class ClientController {
 			return new ModelAndView("redirect:/");
 		}
 	}
+	*/
 	
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public ModelAndView acquisti(HttpSession session) {
